@@ -1,32 +1,23 @@
-# Theraria — design direction
+# Theraria — arah visual terbaru
 
-## Direction exploration
+## Arah yang dipilih: Editorial Berani
 
-1. **Botanical Editorial** — Calm, optimistic nutrition journal with tactile paper-like surfaces, deep forest green, citrus accents, and warm editorial type. **Probability: 0.08.**
-2. **Clinical Light** — Crisp, evidence-oriented white and cool blue interface with restrained charts and clinical clarity. **Probability: 0.06.**
-3. **Athletic Night** — High-energy dark training console with electric lime, charcoal panels, and performance-first data density. **Probability: 0.04.**
+Arah ini mengikuti permintaan terbaru: Theraria harus terasa seperti produk wellness konsumen yang punya identitas dan hero ala landing page, bukan dashboard AI generik. Tampilan awal mengutamakan cerita, fotografi makanan yang sudah ada, headline besar, satu aksi utama, serta ringkasan data yang nyata dan mudah dibaca. Desktop dan mobile memakai bahasa visual yang sama; navigasi dan seluruh alur demo tetap dapat digunakan.
 
-**Committed direction: Botanical Editorial.** It gives daily food and movement tracking a welcoming, human feel without presenting the app as a medical diagnostic tool.
+- **Gerakan desain:** editorial kontemporer yang ekspresif—perpaduan majalah makanan dan landing page produk digital. Berani, hangat, bertekstur, dan terasa dibuat untuk Theraria.
+- **Prinsip inti:** headline besar lebih dominan daripada label kecil; mulai dari satu cerita/aksi yang jelas; gunakan warna blok yang punya fungsi; pertahankan ruang napas dan hierarki; hindari layout kartu-seragam, kilau gradien, serta jargon AI.
+- **Filosofi warna:** hijau hutan pekat `#153B2E` untuk fondasi dan navigasi; chartreuse terang `#D9F45D` untuk CTA/progres utama; coral tomat `#F4775B` untuk penekanan sekunder; biru kobalt `#5268E8` sebagai aksen navigasi/chart; ivory hangat `#FFF7E8` untuk kanvas; tinta `#1F2B25` untuk teks. Gunakan bidang warna solid dan kontras teks yang aksesibel, bukan gradien ungu standar.
+- **Paradigma layout:** halaman Overview yang panjang dan editorial di dalam shell aplikasi yang tetap berfungsi. Urutan layar: hero landing dengan foto dan CTA, strip tanggal ringkas, goal/hidrasi, lalu jurnal, nutrisi, dan pergerakan. Desktop memakai masthead horizontal seperti situs produk; mobile memakai topbar ringkas dan bottom navigation. Semua halaman fitur tetap mudah dicapai dan menggunakan tipografi, warna, tombol, form, serta kartu yang sama.
+- **Elemen khas:** headline grotesk tebal dan rapat; label kecil seperlunya; hero hijau hutan dengan aksen chartreuse/coral dan foto grain bowl yang telah tersedia; lencana statistik bertumpuk di atas foto; kartu putih berbingkai hangat dengan sudut yang lebih tegas; chart dan progress memakai hijau, coral, dan biru secara konsisten.
+- **Filosofi interaksi:** CTA “Log a meal” menjadi jalur utama, aksi movement tetap sekunder. Aksi bersifat jelas, ringan, dan dapat dibatalkan. Informasi demo/local-only tetap terlihat namun tidak mendominasi. AI, skor, penyakit, dan koneksi wearable tidak boleh digambarkan seolah aktif atau tervalidasi.
+- **Animasi:** transisi singkat 140–220 ms; tanpa glow, efek partikel, atau gerakan dekoratif; hormati `prefers-reduced-motion`.
+- **Tipografi:** gunakan sans-serif sistem yang tegas untuk headline, navigasi, angka, dan isi; headline display sekitar 56–68 px desktop dan 38–44 px mobile, bobot berat, line-height rapat, letter-spacing negatif. Angka data memakai tabular numerals. Wordmark lowercase “theraria” tetap mempertahankan karakter serif yang sudah ada sebagai aksen brand.
+- **Esensi brand:** wellness yang praktis, berani, suportif, dan tidak menghakimi—membantu orang memperhatikan pola tanpa menjanjikan hasil kesehatan.
+- **Suara brand:** hangat, lugas, spesifik, transparan terhadap ketidakpastian; tanpa label makanan “baik/buruk”, diagnosis, atau tekanan untuk mengejar angka.
+- **Logo/wordmark:** pertahankan logo daun-dan-matahari serta wordmark “theraria” yang sudah ada; jangan membuat ikon baru.
+- **Cakupan:** penyegaran desain untuk responsive web/PWA yang ada, bukan pembangunan aplikasi native iOS/Android.
+- **Keakuratan konten:** angka, meal, score, biometrik, dan fitur AI tetap berstatus contoh/demo. Layout landing tidak boleh menyiratkan login, analisis AI, HealthKit, Health Connect, maupun penilaian medis telah tersambung.
 
-## User-provided interface reference
+## Catatan transisi
 
-For this UI refresh, use the user's lavender nutrition-dashboard image as the layout and mood reference: a quiet lilac gradient/grid environment, compact white rounded panels, circular calorie/goal progress, distinct pastel macro accents, small date selectors, concise meal rows, and lightweight weekly progress charts. At phone widths, make the experience read as a focused mobile dashboard with a fixed five-item bottom bar, clear safe-area spacing, and no desktop-sidebar dependence. On desktop, expand the same language into a spacious multi-column workspace rather than enlarging a phone mockup. Keep the reference's soft violet treatment within Theraria's botanical editorial system; retain readable forest-ink text, real content, clear demo/offline labels, and never copy sample risk/BMI values or imply clinical validity. This is a responsive web/PWA layout update; the repository has no native iOS/Android project.
-
-## Expanded design brief
-
-- **Design movement:** Contemporary botanical editorial; a friendly wellness journal, not a hospital portal or generic fitness template.
-- **Core principles:** Make daily progress glanceable; keep every health metric understandable; make small logging actions feel effortless; distinguish sample/demo insights from connected data; preserve a sense of calm rather than guilt.
-- **Color philosophy:** Warm oat-paper background `#F7F5EF`; evergreen `#183D32` for navigation and primary actions; softer herb green `#8FB49B`; dark leaf text `#21332B`; pale mint `#E9F0E7`; muted citrus `#E7B45B` for progress accents; clay `#C97961` for a restrained warning/attention accent. Status colors always include labels and never imply a diagnosis.
-- **Layout paradigm:** Responsive application shell with a narrow evergreen desktop sidebar and mobile bottom navigation; generous page gutters; modular cards; one dominant daily overview row; stacked single-column cards on phones. Use simple, data-grounded CSS charts and avoid decorative data clutter.
-- **Signature elements:** A small leaf/sun mark; rounded but not pill-heavy cards; thin botanical line details; an editorial hero using a plated grain bowl with ample negative space; small labeled rings for nutrition/hydration progress; simple inline SVG/Lucide icons.
-- **Interaction philosophy:** Optimistic, reversible actions; inline add/skip/swap; clear confirmation of local saves; buttons and fields expose accessible labels and keyboard focus. AI, health scoring, disease points, and health data connections carry visible demo/not-connected labels.
-- **Animation:** Restrained 140–220 ms fades/transforms for navigation and progress fills; honor `prefers-reduced-motion`; no looping movement or attention-grabbing effects.
-- **Typography system:** Use a warm display serif for major editorial headings and a clean sans-serif for numbers, labels, forms, and body text. Keep numeric figures tabular and high contrast. Avoid small, low-contrast metadata.
-- **Brand essence:** A steady, kind companion helping people notice patterns and build practical routines.
-- **Brand voice:** Supportive, specific, non-judgmental, plain-language, and transparent about uncertainty. Prefer “A steady day so far” over “good/bad”; no diagnosis or promises.
-- **Wordmark/logo:** “theraria” in a simple lowercase wordmark beside a leaf-and-sun symbol. Keep the application icon as a separate full-bleed square with a highly legible mark; do not rely on generated lettering.
-- **Signature brand color:** Evergreen `#183D32`.
-
-## Planned core visual asset
-
-Generate one original editorial food photograph for the dashboard's featured meal card: a top-down, abundant but simple grain bowl, warm natural side-light, herbs and citrus, oat linen and wood, botanical green accents, and generous uncluttered space. No text, logos, packaging, people, or medical imagery. This is a demonstration visual, not a verified nutrition reference.
+Direction ini menggantikan treatment lavender/pastel pada iterasi sebelumnya atas permintaan pengguna. Pertahankan fitur serta safety labels yang ada; ubah prioritas visual dan styling, bukan kontrak data ataupun koneksi layanan.
