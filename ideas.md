@@ -8,6 +8,10 @@
 
 **Committed direction: Botanical Editorial.** It gives daily food and movement tracking a welcoming, human feel without presenting the app as a medical diagnostic tool.
 
+## User-provided interface reference
+
+For this UI refresh, use the user's lavender nutrition-dashboard image as the layout and mood reference: a quiet lilac gradient/grid environment, compact white rounded panels, circular calorie/goal progress, distinct pastel macro accents, small date selectors, concise meal rows, and lightweight weekly progress charts. At phone widths, make the experience read as a focused mobile dashboard with a fixed five-item bottom bar, clear safe-area spacing, and no desktop-sidebar dependence. On desktop, expand the same language into a spacious multi-column workspace rather than enlarging a phone mockup. Keep the reference's soft violet treatment within Theraria's botanical editorial system; retain readable forest-ink text, real content, clear demo/offline labels, and never copy sample risk/BMI values or imply clinical validity. This is a responsive web/PWA layout update; the repository has no native iOS/Android project.
+
 ## Expanded design brief
 
 - **Design movement:** Contemporary botanical editorial; a friendly wellness journal, not a hospital portal or generic fitness template.
